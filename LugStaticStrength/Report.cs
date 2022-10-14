@@ -219,17 +219,7 @@ namespace LugStaticStrength
 
         private static MarginOfSafety GetMinMarginOfSafety(LoadCaseOutput loadCaseOutput)
         {
-            var minMarginOfSafety = loadCaseOutput.FailureModesMargins[0];
-
-            for (int i = 1; i < loadCaseOutput.FailureModesMargins.Count; i++)
-            {
-                var currentMarginOfSafety = loadCaseOutput.FailureModesMargins[i];
-
-                if (minMarginOfSafety.Value > currentMarginOfSafety.Value)
-                    minMarginOfSafety = currentMarginOfSafety;
-            }
-
-            return minMarginOfSafety;
+            return loadCaseOutput.FailureModesMargins.OrderBy(margin => margin.Value).First();
         }
     }
 }
