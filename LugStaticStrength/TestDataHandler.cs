@@ -42,9 +42,7 @@ namespace LugStaticStrength
         public static double GetLinearInterpolatedValue(DataPoint a, DataPoint b, double xValue)
         {
             if (a.Equals(b))
-            {
                 return a.Y;
-            }
 
             DataPoint top;
             DataPoint bottom;
@@ -60,9 +58,7 @@ namespace LugStaticStrength
                 bottom = a;
             }
 
-            var result = bottom.Y + (top.Y - bottom.Y) * (xValue - bottom.X) / (top.X - bottom.X);
-
-            return result;
+            return bottom.Y + (top.Y - bottom.Y) * (xValue - bottom.X) / (top.X - bottom.X);
         }
     }
 }
