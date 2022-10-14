@@ -83,6 +83,7 @@
     <Compile Include="LoadCaseOutput.cs" />
     <Compile Include="Lug.cs" />
     <Compile Include="MarginOfSafety.cs" />
+    <Compile Include="MarginOfSafetyByValueComparer.cs" />
     <Compile Include="Material.cs" />
     <Compile Include="MaterialTypes.cs" />
     <Compile Include="Report.cs" />
