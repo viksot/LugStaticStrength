@@ -6,7 +6,7 @@ namespace LugStaticStrength
     {
         public int Compare(MarginOfSafety x, MarginOfSafety y)
         {
-            return x.Value.CompareTo(x.Value);
+            return x.Value.CompareTo(y.Value);
         }
     }
 }
