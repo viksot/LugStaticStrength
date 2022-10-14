@@ -73,8 +73,8 @@
     <Compile Include="Failure Modes\TransverseSectionRupture.cs" />
     <Compile Include="InputFileParser.cs" />
     <Compile Include="Analysis\AnalysisOutput.cs" />
-    <Compile Include="BearingTestData.cs" />
-    <Compile Include="BearingTestData_Test.cs" />
+    <Compile Include="Static Tests Data\BearingTestData.cs" />
+    <Compile Include="Static Tests Data\BearingTestData_Test.cs" />
     <Compile Include="Excel.cs" />
     <Compile Include="Failure Modes\FailureMode.cs" />
     <Compile Include="Failure Modes\FailureMode_Test.cs" />
@@ -87,7 +87,8 @@
     <Compile Include="Material.cs" />
     <Compile Include="MaterialTypes.cs" />
     <Compile Include="Report.cs" />
-    <Compile Include="TestDataHandler.cs" />
+    <Compile Include="Static Tests Data\DataPoint.cs" />
+    <Compile Include="Static Tests Data\TestDataHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Analysis\Analysis.cs" />
