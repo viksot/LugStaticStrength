@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace LugStaticStrength
 {
-    public class DataPoint
+    public class DataPoint : IEquatable<DataPoint>
     {
         public double X { get; set; }
         public double Y { get; set; }
@@ -19,22 +19,9 @@ namespace LugStaticStrength
             return $"X = {X}; Y = {Y}";
         }
 
-        public override bool Equals(object obj)
+        public bool Equals(DataPoint other)
         {
-            if (obj == null)
-                return false;
-
-            if (!(obj is DataPoint))
-                return false;
-
-            DataPoint dataPoint = obj as DataPoint;
-
-            return X == dataPoint.X && Y == dataPoint.Y;
-        }
-
-        public override int GetHashCode()
-        {
-            return ToString().GetHashCode();
+            return X == other.X && Y == other.Y;
         }
     }
 
