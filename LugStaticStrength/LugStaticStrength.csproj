@@ -71,11 +71,11 @@
     <Compile Include="Failure Modes\NoseRupture.cs" />
     <Compile Include="Failure Modes\NoseShear.cs" />
     <Compile Include="Failure Modes\TransverseSectionRupture.cs" />
-    <Compile Include="InputFileParser.cs" />
+    <Compile Include="Read and Write File\InputFileParser.cs" />
     <Compile Include="Analysis\AnalysisOutput.cs" />
     <Compile Include="Static Tests Data\BearingTestData.cs" />
     <Compile Include="Static Tests Data\BearingTestData_Test.cs" />
-    <Compile Include="Excel.cs" />
+    <Compile Include="Read and Write File\Excel.cs" />
     <Compile Include="Failure Modes\FailureMode.cs" />
     <Compile Include="Failure Modes\FailureMode_Test.cs" />
     <Compile Include="Load.cs" />
@@ -86,7 +86,7 @@
     <Compile Include="MarginOfSafetyByValueComparer.cs" />
     <Compile Include="Material.cs" />
     <Compile Include="MaterialTypes.cs" />
-    <Compile Include="Report.cs" />
+    <Compile Include="Read and Write File\Report.cs" />
     <Compile Include="Static Tests Data\DataPoint.cs" />
     <Compile Include="Static Tests Data\TestDataHandler.cs" />
     <Compile Include="Program.cs" />
